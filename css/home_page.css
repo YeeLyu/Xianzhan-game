@@ -1,0 +1,301 @@
+.content_1 {
+	width: 1200px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+
+/*内容1——小轮播*/
+
+.partA_A {
+	width: 440px;
+	height: 280px;
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+#index {
+	position: absolute;
+	left: 380px;
+	bottom: 8px;
+	z-index: 10;
+}
+
+#index li {
+	width: 14px;
+	height: 14px;
+	border-radius: 14px;
+	background-color: #D82C3C;
+	display: inline-block;
+	list-style-type: none;
+}
+
+#img {
+	width: 440px;
+	height: 280px;
+}
+
+#img li {
+	width: 440px;
+	height: 280px;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.8s ease-in;
+	list-style-type: none;
+}
+
+#index .on {
+	width: 28px;
+	height: 14px;
+	border-radius: 38%;
+	background-color: #D82C3C;
+}
+
+#img .opa-on {
+	opacity: 1;
+}
+
+
+/*开始游戏*/
+
+.c1_game {
+	width: 300px;
+	position: relative;
+	float: left;
+	margin-top: -90px;
+	margin-right: 10px;
+}
+
+.c1_game_start {
+	width: 100%;
+	height: 80px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.c1_game_bg {
+	width: 300px;
+	height: 280px;
+	float: left;
+	background: no-repeat url(../img/首页图片/手机背景.jpg) center;
+}
+
+.c1_game_code {
+	width: 180px;
+	height: 180px;
+	display: block;
+	margin: 45px auto;
+}
+
+.c1_game_code img {
+	width: 180px;
+	height: 180px;
+}
+
+
+/*新闻公告*/
+
+.c1_news {
+	width: 440px;
+	height: 280px;
+	float: right;
+	background-color: #dddff4;
+}
+
+.c1_news_title {
+	width: 440px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.c1_news_title a:hover {
+	color: red;
+}
+
+.c1_news_title .c1_news_a1 {
+	width: 133px;
+	float: left;
+	text-align: center;
+	font-size: 18px;
+	color: #333333;
+}
+
+.c1_news_title .c1_news_a2 {
+	width: 50px;
+	float: right;
+	text-align: center;
+	font-size: 10px;
+	color: #666666;
+}
+
+.c1_news li {
+	width: 400px;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 20px;
+	font-size: 14px;
+	border-bottom: 1px dashed #f3f3f3;
+}
+
+.c1_news li a {
+	width: 400px;
+	height: 35px;
+	color: #666666;
+	display: inline-block;
+}
+
+.c1_news li span {
+	float: right;
+}
+
+.c1_news li a:hover {
+	margin-left: 5px;
+	color: #d82c3c;
+}
+
+
+/*内容2——动画*/
+
+.c2 {
+	width: 1200px;
+	height: 140px;
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 10px;
+}
+
+.trans {
+	position: relative;
+	*overflow: hidden;
+	display: inline;
+	transform: rotateX(0deg);
+	transition: all .4s ease;
+	-webkit-transform: rotateX(0deg);
+	-webkit-transition: all .4s ease;
+	transform-style: preserve-3d;
+}
+
+.trans:hover {
+	transform: rotateX(90deg);
+	-webkit-transform: rotateX(90deg)
+}
+
+.trans img {
+	width: 300px;
+	height: 140px;
+	float: left;
+	top: 0px;
+	border: 0px;
+	vertical-align: bottom;
+	transform: translateZ(70px);
+}
+
+.trans .box2-hand {
+	height: 140px;
+	position: absolute;
+	top: 0px;
+	transform: rotateX(-90deg) translateZ(70px);
+}
+
+.box2-hand .click1 {
+	width: 300px;
+	height: 140px;
+}
+
+.box2-hand a {
+	color: #ffffff;
+	font-size: 12px;
+	display: block;
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box2-hand a:hover {
+	color: #F29417;
+}
+
+
+/*内容3——大轮播*/
+
+#content_3 {
+	width: 1200px;
+	height: 440px;
+	position: relative;
+	margin-bottom: 62px;
+	overflow: hidden;
+}
+
+#list {
+	width: 6000px;
+	height: 440px;
+	position: absolute;
+	z-index: 1;
+}
+
+#list img {
+	float: left;
+	display: block;
+}
+
+#dot {
+	width: 180px;
+	position: absolute;
+	left: 930px;
+	top: 103px;
+	z-index: 10;
+}
+
+#dot .p1 {
+	width: 114px;
+	height: 114px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: no-repeat url(../img/首页图片/小图1.png) center;
+	background-position: -114px 0;
+	cursor: pointer;
+}
+
+#dot .p2 {
+	width: 114px;
+	height: 114px;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	background: no-repeat url(../img/首页图片/小图2.png) center;
+	background-position: -114px 0;
+	cursor: pointer;
+}
+
+#dot .p3 {
+	width: 114px;
+	height: 114px;
+	display: block;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	background: no-repeat url(../img/首页图片/小图3.png) center;
+	background-position: -114px 0;
+	cursor: pointer;
+}
+
+#dot .on {
+	background-position: 0 0;
+}
+
+#list {
+	position: relative;
+}
+
+#list a {
+	position: absolute;
+}
